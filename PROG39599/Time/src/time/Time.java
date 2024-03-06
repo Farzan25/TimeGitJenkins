@@ -31,7 +31,7 @@ public class Time
 			JOptionPane.QUESTION_MESSAGE);
 		
 		int totalSeconds = getTotalSeconds("10:10:10");
-		System.out.println("Total Seconds ="+totalSeconds);
+		System.out.println("**GH Total Seconds ="+totalSeconds);
 		}
 		catch(StringIndexOutOfBoundsException e)
 		{
@@ -59,6 +59,7 @@ public class Time
 		int minutes = getTotalMinutes (time);
 		int seconds = getSeconds(time);
 		return hours * 3600 + minutes * 60 + seconds;
+		
 	}
 	
 	public static int getSeconds(String time) throws NumberFormatException, StringIndexOutOfBoundsException 
