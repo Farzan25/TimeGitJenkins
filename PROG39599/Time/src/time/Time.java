@@ -30,9 +30,8 @@ public class Time
 			"Enter a time in the format hh:mm:ss", "Enter Time",
 			JOptionPane.QUESTION_MESSAGE);
 		
-		int totalSeconds = getTotalSeconds(time);
-		JOptionPane.showMessageDialog(null, totalSeconds, "Total Seconds",
-			JOptionPane.INFORMATION_MESSAGE);
+		int totalSeconds = getTotalSeconds("10:10:10");
+		System.out.println("Total Seconds ="+totalSeconds);
 		}
 		catch(StringIndexOutOfBoundsException e)
 		{
