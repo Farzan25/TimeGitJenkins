@@ -23,6 +23,10 @@ public class Time
 {
 	public static void main(String[] args) 
 	{
+		
+		int totalSeconds = getTotalSeconds("10:10:10");
+		System.out.println("**GH Total Seconds ="+totalSeconds);
+		/*
 		try
 		{
 			
@@ -50,6 +54,7 @@ public class Time
 		{
 			System.out.println("An unexpected Exception occurred");
 		}
+		*/
 	}
 
 	public static int getTotalSeconds(String time)throws NumberFormatException, StringIndexOutOfBoundsException {
